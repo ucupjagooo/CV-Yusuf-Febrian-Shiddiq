@@ -23,26 +23,18 @@
             .no-print { display: none !important; }
             body { background-color: white; padding: 0; }
             .cv-container { box-shadow: none; margin: 0; width: 100%; max-width: 100%; border-radius: 0; }
-            .page-break { page-break-before: always; }
         }
 
         .skill-tag {
             background: #f1f5f9;
             border: 1px solid #e2e8f0;
-            color: #475569;
-            padding: 4px 10px;
+            color: #334155;
+            padding: 5px 12px;
             border-radius: 6px;
-            font-size: 0.75rem;
+            font-size: 0.8rem;
             font-weight: 600;
             display: inline-block;
-            margin: 2px;
-            transition: all 0.2s;
-        }
-
-        .skill-tag:hover {
-            background: #3b82f6;
-            color: white;
-            border-color: #3b82f6;
+            margin: 3px;
         }
 
         .profile-img-container {
@@ -73,18 +65,8 @@
             left: 0;
             width: 40px;
             height: 4px;
-            background: #3b82f6;
+            background: #2563eb;
             border-radius: 2px;
-        }
-
-        .ready-badge {
-            background: #dcfce7;
-            color: #166534;
-            padding: 2px 8px;
-            border-radius: 99px;
-            font-size: 10px;
-            font-weight: bold;
-            border: 1px solid #bbf7d0;
         }
     </style>
 </head>
@@ -94,13 +76,12 @@
         <!-- Header Section -->
         <div class="bg-slate-900 text-white p-8 md:p-12 flex flex-col md:flex-row items-center gap-8">
             <div class="profile-img-container shadow-2xl">
-                <!-- Gunakan tag img di bawah ini jika sudah ada foto -->
                 <img src="ucup.jpg" alt="Yusuf Febrian Shiddiq" class="w-full h-full object-cover" onerror="this.src='https://via.placeholder.com/150'">
             </div>
 
             <div class="text-center md:text-left flex-1">
-                <h1 class="text-3xl md:text-5xl font-extrabold tracking-tight leading-none mb-2">YUSUF FEBRIAN SHIDDIQ</h1>
-                <p class="text-blue-400 font-semibold text-lg md:text-xl mb-4">Adaptable Professional | Tech & General Operations</p>
+                <h1 class="text-3xl md:text-4xl font-extrabold tracking-tight leading-none mb-2">YUSUF FEBRIAN SHIDDIQ</h1>
+                <p class="text-blue-400 font-semibold text-base md:text-lg mb-4">Pengemudi Profesional & Staf Operasional</p>
                 
                 <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-sm text-slate-300">
                     <div class="flex items-center justify-center md:justify-start gap-3">
@@ -125,7 +106,7 @@
                         <div class="w-8 h-8 rounded-full bg-blue-600/20 flex items-center justify-center">
                             <i class="fas fa-print text-xs"></i>
                         </div>
-                        Cetak CV / PDF
+                        Cetak CV / Simpan PDF
                     </div>
                 </div>
             </div>
@@ -135,80 +116,55 @@
             <!-- Left Column -->
             <div class="md:col-span-4 bg-slate-50 p-8 border-r border-slate-100">
                 
-                <!-- Role Readiness -->
+                <!-- Keahlian Utama -->
                 <div class="mb-10">
-                    <h2 class="section-title text-slate-800 uppercase text-sm">Job Readiness</h2>
-                    <div class="flex flex-wrap gap-2">
-                        <span class="ready-badge">Web Developer</span>
-                        <span class="ready-badge">Driver / Courier</span>
-                        <span class="ready-badge">Cashier / POS</span>
-                        <span class="ready-badge">Waiter</span>
-                        <span class="ready-badge">Team Leader</span>
-                        <span class="ready-badge">General Worker</span>
-                    </div>
-                </div>
-
-                <!-- Technical & Field Skills -->
-                <div class="mb-10">
-                    <h2 class="section-title text-slate-800 uppercase text-sm">Skills</h2>
-                    <div class="space-y-6">
-                        <div>
-                            <p class="text-[10px] font-black text-slate-400 uppercase mb-2 tracking-widest">Digital & IT</p>
-                            <div class="flex flex-wrap">
-                                <span class="skill-tag">Web Dev (HTML/CSS)</span>
-                                <span class="skill-tag">Server Admin</span>
-                                <span class="skill-tag">Thermal Print Setup</span>
-                                <span class="skill-tag">Database Management</span>
-                            </div>
-                        </div>
-                        <div>
-                            <p class="text-[10px] font-black text-slate-400 uppercase mb-2 tracking-widest">Field & Physical</p>
-                            <div class="flex flex-wrap">
-                                <span class="skill-tag">Stamina Fisik Tinggi</span>
-                                <span class="skill-tag">Leadership</span>
-                                <span class="skill-tag">Supply Handling</span>
-                                <span class="skill-tag">Quick Learner</span>
-                            </div>
-                        </div>
+                    <h2 class="section-title text-slate-800 uppercase text-xs">Keahlian & Kemampuan</h2>
+                    <div class="flex flex-wrap gap-1">
+                        <span class="skill-tag">Navigasi & Rute Jalan</span>
+                        <span class="skill-tag">Pengemudian Aman</span>
+                        <span class="skill-tag">Perawatan Kendaraan</span>
+                        <span class="skill-tag">Ketepatan Waktu</span>
+                        <span class="skill-tag">Fisik & Stamina Prima</span>
+                        <span class="skill-tag">Etika & Kesopanan</span>
+                        <span class="skill-tag">Manajemen Waktu</span>
                     </div>
                 </div>
 
                 <!-- Pendidikan -->
                 <div class="mb-10">
-                    <h2 class="section-title text-slate-800 uppercase text-sm">Education</h2>
-                    <div class="space-y-6">
-                        <div class="relative pl-4 border-l-2 border-blue-200">
+                    <h2 class="section-title text-slate-800 uppercase text-xs">Riwayat Pendidikan</h2>
+                    <div class="space-y-4">
+                        <div class="relative pl-4 border-l-2 border-blue-500">
                             <p class="font-bold text-slate-800 text-sm">Telkom University</p>
-                            <p class="text-xs text-blue-600 font-medium">S1 Teknik Komputer</p>
-                            <p class="text-[10px] text-slate-400 mt-1">2024 - Sekarang</p>
+                            <p class="text-xs text-slate-600">Pendidikan Tinggi</p>
                         </div>
-                        <div class="relative pl-4 border-l-2 border-slate-200">
-                            <p class="font-bold text-slate-800 text-sm">SMAN 1 Pangalengan</p>
-                            <p class="text-[10px] text-slate-400 mt-1">Lulus Tahun 2024</p>
+                        <div class="relative pl-4 border-l-2 border-slate-300">
+                            <p class="font-bold text-slate-800 text-sm">SMAN 17 Bandung</p>
+                            <p class="text-xs text-slate-500">Sekolah Menengah Atas</p>
                         </div>
                     </div>
                 </div>
 
                 <!-- Lisensi -->
                 <div class="mb-10">
-                    <h2 class="section-title text-slate-800 uppercase text-sm">Additional Info</h2>
-                    <div class="bg-white p-3 rounded-lg border border-slate-200">
-                        <p class="text-xs font-bold text-slate-700">Lisensi Mengemudi:</p>
-                        <p class="text-[11px] text-slate-500 italic">Belum memiliki SIM (Dalam proses pengurusan)</p>
+                    <h2 class="section-title text-slate-800 uppercase text-xs">Lisensi Mengemudi</h2>
+                    <div class="bg-white p-3 rounded-xl border border-slate-200 shadow-sm">
+                        <p class="text-xs font-bold text-slate-800">SIM (Surat Izin Mengemudi)</p>
+                        <p class="text-[11px] text-blue-600 font-semibold mt-1">Dalam proses penyelesaian akhir</p>
                     </div>
                 </div>
 
                 <!-- Bahasa -->
                 <div>
-                    <h2 class="section-title text-slate-800 uppercase text-sm">Languages</h2>
+                    <h2 class="section-title text-slate-800 uppercase text-xs">Bahasa</h2>
                     <div class="flex flex-col gap-2">
-                        <div class="flex justify-between items-center bg-white p-2 rounded-lg shadow-sm border border-slate-200">
-                            <span class="text-xs font-bold text-slate-700">Indonesia</span>
-                            <span class="text-[10px] bg-green-100 text-green-700 px-2 py-0.5 rounded-full font-bold">Native</span>
+                        <div class="flex justify-between items-center bg-white p-2.5 rounded-lg border border-slate-200">
+                            <span class="text-xs font-bold text-slate-700">Bahasa Indonesia</span>
+                            <span class="text-[10px] bg-green-100 text-green-700 px-2 py-0.5 rounded-full font-bold">Aktif</span>
                         </div>
-                        <div class="flex justify-between items-center bg-white p-2 rounded-lg shadow-sm border border-slate-200">
-                            <span class="text-xs font-bold text-slate-700">English</span>
-                            <span class="text-[10px] bg-blue-100 text-blue-700 px-2 py-0.5 rounded-full font-bold">Basic</span>
+                        <div class="flex justify-between items-center bg-white p-2.5 rounded-lg border border-slate-200">
+                            <span class="text-xs font-bold text-slate-700">Bahasa Sunda</span>
+                            <span class="text-[10px] bg-green-100 text-green-700 px-2 py-0.5 rounded-full font-bold">Aktif</span>
                         </div>
                     </div>
                 </div>
@@ -217,93 +173,68 @@
             <!-- Right Column -->
             <div class="md:col-span-8 p-8 md:p-12">
                 <!-- Profil Singkat -->
-                <section class="mb-12">
-                    <h2 class="flex items-center text-xl font-extrabold text-slate-800 mb-4">
-                        <span class="w-10 h-10 bg-blue-100 text-blue-600 rounded-xl flex items-center justify-center mr-3">
-                            <i class="fas fa-bullseye text-sm"></i>
+                <section class="mb-10">
+                    <h2 class="flex items-center text-lg font-extrabold text-slate-800 mb-3">
+                        <span class="w-8 h-8 bg-blue-100 text-blue-600 rounded-lg flex items-center justify-center mr-3 text-xs">
+                            <i class="fas fa-user-check"></i>
                         </span>
-                        Professional Summary
+                        Ringkasan Profil
                     </h2>
                     <p class="text-slate-600 leading-relaxed text-sm">
-                        Mahasiswa Teknik Komputer dengan disiplin tinggi sebagai <span class="text-slate-900 font-semibold">Atlet Renang</span>. Saya memiliki kombinasi unik antara kemampuan <span class="text-slate-900 font-semibold">teknis IT (Web Dev & IoT)</span> dan kesiapan kerja <span class="text-slate-900 font-semibold">fisik yang tangguh</span>. Saya sangat terbuka untuk bekerja di berbagai bidang: mulai dari pengembangan web, staf operasional (Kasir/Waiter), hingga pekerjaan lapangan seperti pengangkutan suplai makanan/logistik. Saya adalah individu yang cepat belajar, jujur, dan memiliki jiwa kepemimpinan tim.
+                        Pribadi yang disiplin, jujur, dan memiliki tanggung jawab tinggi terhadap keamanan serta kenyamanan perjalanan. Berlatar belakang sebagai atlet renang yang terbiasa dengan ketahanan fisik, fokus penuh, dan ketepatan waktu. Bagi saya, mengemudi bukan sekadar menjalankan kendaraan, melainkan menjaga keselamatan penumpang serta memastikan seluruh operasional perjalanan berjalan dengan tenang, tepat waktu, dan tanpa kendala. Siap bertugas untuk kebutuhan kantor pribadi, instansi, maupun lembaga pendidikan.
                     </p>
                 </section>
 
-                <!-- Pengalaman & Projek -->
-                <section class="mb-12">
-                    <h2 class="flex items-center text-xl font-extrabold text-slate-800 mb-6">
-                        <span class="w-10 h-10 bg-blue-100 text-blue-600 rounded-xl flex items-center justify-center mr-3">
-                            <i class="fas fa-briefcase text-sm"></i>
+                <!-- Nilai Utama & Kesiapan Kerja -->
+                <section class="mb-10">
+                    <h2 class="flex items-center text-lg font-extrabold text-slate-800 mb-4">
+                        <span class="w-8 h-8 bg-blue-100 text-blue-600 rounded-lg flex items-center justify-center mr-3 text-xs">
+                            <i class="fas fa-shield-halved"></i>
                         </span>
-                        Experience & Flexibility
+                        Komitmen & Prinsip Kerja
                     </h2>
                     
-                    <div class="space-y-8">
-                        <!-- Project 1: Server -->
-                        <div class="relative pl-8 before:content-[''] before:absolute before:left-0 before:top-2 before:bottom-0 before:w-0.5 before:bg-slate-200">
-                            <div class="absolute left-[-5px] top-1 w-3 h-3 bg-blue-600 rounded-full border-2 border-white shadow-sm"></div>
-                            <div class="flex flex-col md:flex-row md:justify-between md:items-start mb-2">
-                                <h3 class="font-bold text-slate-900 text-base">Founder & Admin Game Server (Operations)</h3>
-                                <span class="text-[10px] bg-slate-100 px-2 py-1 rounded font-bold text-slate-500 uppercase tracking-tighter">Jan 2024 - Sekarang</span>
-                            </div>
-                            <ul class="text-sm text-slate-600 space-y-2 list-none">
-                                <li class="flex items-start gap-2">
-                                    <i class="fas fa-check-circle text-blue-500 mt-1 text-[10px]"></i>
-                                    <span>Manajemen infrastruktur server dan penyelesaian masalah teknis secara cepat.</span>
-                                </li>
-                                <li class="flex items-start gap-2">
-                                    <i class="fas fa-check-circle text-blue-500 mt-1 text-[10px]"></i>
-                                    <span>Kepemimpinan: Mengelola tim moderator dan melayani pelanggan (Customer Support).</span>
-                                </li>
-                            </ul>
+                    <div class="space-y-4">
+                        <div class="p-4 rounded-xl bg-slate-50 border border-slate-200">
+                            <h3 class="font-bold text-slate-900 text-sm mb-1"><i class="fas fa-clock text-blue-600 mr-2"></i>Kedisiplinan & Ketepatan Waktu</h3>
+                            <p class="text-xs text-slate-600 leading-relaxed">
+                                Menghargai waktu dengan senantiasa hadir tepat waktu, merencanakan rute perjalanan terbaik, dan siap siaga mendukung jadwal kegiatan pimpinan, staf, maupun penumpang.
+                            </p>
                         </div>
 
-                        <!-- General Ops: Kasir & Waiter Readiness -->
-                        <div class="relative pl-8 before:content-[''] before:absolute before:left-0 before:top-2 before:bottom-0 before:w-0.5 before:bg-slate-200">
-                            <div class="absolute left-[-5px] top-1 w-3 h-3 bg-slate-300 rounded-full border-2 border-white shadow-sm"></div>
-                            <div class="flex flex-col md:flex-row md:justify-between md:items-start mb-2">
-                                <h3 class="font-bold text-slate-900 text-base">Service & Operational Readiness</h3>
-                                <span class="text-[10px] bg-blue-50 px-2 py-1 rounded font-bold text-blue-600 uppercase tracking-tighter">Flexible Roles</span>
-                            </div>
-                            <ul class="text-sm text-slate-600 space-y-2 list-none">
-                                <li class="flex items-start gap-2">
-                                    <i class="fas fa-utensils text-slate-400 mt-1 text-[10px]"></i>
-                                    <span><strong>Kasir & Waiter:</strong> Menguasai penggunaan aplikasi kasir berbasis web/mobile, integrasi printer struk bluetooth/thermal, dan pelayanan pelanggan yang ramah.</span>
-                                </li>
-                                <li class="flex items-start gap-2">
-                                    <i class="fas fa-truck-loading text-slate-400 mt-1 text-[10px]"></i>
-                                    <span><strong>Logistik & Fisik:</strong> Siap melakukan pekerjaan angkut suplai, pengaturan gudang, dan pengiriman barang dengan ketahanan fisik yang terlatih.</span>
-                                </li>
-                            </ul>
+                        <div class="p-4 rounded-xl bg-slate-50 border border-slate-200">
+                            <h3 class="font-bold text-slate-900 text-sm mb-1"><i class="fas fa-car-burst text-blue-600 mr-2"></i>Tanggung Jawab & Perawatan Kendaraan</h3>
+                            <p class="text-xs text-slate-600 leading-relaxed">
+                                Memastikan unit kendaraan yang dipercayakan senantiasa dalam kondisi bersih, aman, wangi, serta siap pakai melalui pengecekan rutin (oli, rem, tekanan ban, dan kelayakan mesin).
+                            </p>
                         </div>
 
-                        <!-- Project 2: Smart Trash Can -->
-                        <div class="relative pl-8 before:content-[''] before:absolute before:left-0 before:top-2 before:bottom-0 before:w-0.5 before:bg-slate-200">
-                            <div class="absolute left-[-5px] top-1 w-3 h-3 bg-slate-300 rounded-full border-2 border-white shadow-sm"></div>
-                            <div class="flex flex-col md:flex-row md:justify-between md:items-start mb-2">
-                                <h3 class="font-bold text-slate-900 text-base">IoT Project Leader (Smart Trash Can)</h3>
-                                <span class="text-[10px] bg-slate-100 px-2 py-1 rounded font-bold text-slate-500 uppercase tracking-tighter text-blue-600">Hardware Project</span>
-                            </div>
-                            <p class="text-sm text-slate-600">Memimpin tim merancang hardware otomatis. Pengalaman ini melatih kemampuan <span class="font-bold">Team Leadership</span> dan ketelitian kerja.</p>
+                        <div class="p-4 rounded-xl bg-slate-50 border border-slate-200">
+                            <h3 class="font-bold text-slate-900 text-sm mb-1"><i class="fas fa-heart text-blue-600 mr-2"></i>Etika & Pengendalian Diri</h3>
+                            <p class="text-xs text-slate-600 leading-relaxed">
+                                Menjaga kerahasiaan dan privasi penumpang, bersikap sopan, ramah, serta tenang saat mengemudi di berbagai kondisi lalu lintas.
+                            </p>
                         </div>
                     </div>
                 </section>
 
-                <!-- Prestasi -->
+                <!-- Keunggulan Fisik & Prestasi -->
                 <section>
-                    <h2 class="flex items-center text-xl font-extrabold text-slate-800 mb-4">
-                        <span class="w-10 h-10 bg-yellow-100 text-yellow-600 rounded-xl flex items-center justify-center mr-3">
-                            <i class="fas fa-award text-sm"></i>
+                    <h2 class="flex items-center text-lg font-extrabold text-slate-800 mb-3">
+                        <span class="w-8 h-8 bg-yellow-100 text-yellow-600 rounded-lg flex items-center justify-center mr-3 text-xs">
+                            <i class="fas fa-trophy"></i>
                         </span>
-                        Achievements
+                        Latar Belakang Kedisiplinan
                     </h2>
-                    <div class="bg-gradient-to-r from-blue-50 to-indigo-50 p-6 rounded-2xl border border-blue-100 flex items-center gap-5 shadow-sm">
-                        <div class="text-4xl text-yellow-500 flex-shrink-0">
+                    <div class="bg-gradient-to-r from-slate-50 to-blue-50 p-5 rounded-2xl border border-slate-200 flex items-start gap-4">
+                        <div class="text-3xl text-yellow-500 flex-shrink-0 mt-1">
                             <i class="fas fa-medal"></i>
                         </div>
                         <div>
                             <p class="text-sm font-bold text-slate-900">Juara 1 Lomba Renang - Kabupaten Bandung</p>
-                            <p class="text-xs text-slate-500 mt-1 leading-relaxed">Membuktikan kedisiplinan, ketangguhan fisik, dan kesiapan bekerja keras di bawah tekanan untuk mencapai hasil terbaik.</p>
+                            <p class="text-xs text-slate-600 mt-1 leading-relaxed">
+                                Latihan keras dan kompetisi membentuk stamina fisik yang tangguh, tidak mudah lelah, konsentrasi tinggi, serta tingkat kewaspadaan yang kuat saat menjalankan tugas dalam durasi panjang.
+                            </p>
                         </div>
                     </div>
                 </section>
@@ -311,18 +242,10 @@
         </div>
         
         <!-- Footer -->
-        <div class="bg-slate-900 text-white p-6 flex flex-col md:flex-row justify-between items-center text-[10px] uppercase tracking-[0.2em] font-bold">
-            <span class="mb-2 md:mb-0">Yusuf Febrian Shiddiq &copy; 2024</span>
-            <span class="flex gap-4">
-                <a href="#" class="hover:text-blue-400 transition">GitHub</a>
-                <a href="#" class="hover:text-blue-400 transition">Portfolio</a>
-            </span>
+        <div class="bg-slate-900 text-white p-5 text-center text-[10px] uppercase tracking-widest font-semibold">
+            <span>Yusuf Febrian Shiddiq &bull; CV Pengemudi Profesional</span>
         </div>
     </div>
-
-    <!-- Decoration Rings -->
-    <div class="fixed top-[-100px] right-[-100px] w-80 h-80 bg-blue-400/5 rounded-full -z-10 no-print"></div>
-    <div class="fixed bottom-[-50px] left-[-50px] w-60 h-60 bg-indigo-400/5 rounded-full -z-10 no-print"></div>
 
 </body>
 </html>
