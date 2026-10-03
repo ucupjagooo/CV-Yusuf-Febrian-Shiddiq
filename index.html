@@ -11,8 +11,8 @@
         
         body {
             font-family: 'Plus Jakarta Sans', sans-serif;
-            background-color: #f8fafc;
-            color: #1e293b;
+            background-color: #f1f5f9;
+            color: #0f172a;
         }
 
         .cv-container {
@@ -26,34 +26,43 @@
         }
 
         .skill-tag {
-            background: #f1f5f9;
+            background: #ffffff;
             border: 1px solid #e2e8f0;
             color: #334155;
-            padding: 5px 12px;
-            border-radius: 6px;
-            font-size: 0.8rem;
+            padding: 6px 12px;
+            border-radius: 8px;
+            font-size: 0.78rem;
             font-weight: 600;
-            display: inline-block;
-            margin: 3px;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            box-shadow: 0 1px 2px rgba(0,0,0,0.03);
+            transition: all 0.2s ease;
+        }
+
+        .skill-tag:hover {
+            border-color: #2563eb;
+            color: #2563eb;
         }
 
         .profile-img-container {
-            width: 140px;
-            height: 140px;
-            border: 4px solid rgba(255, 255, 255, 0.2);
-            border-radius: 20px;
+            width: 150px;
+            height: 150px;
+            border: 4px solid rgba(255, 255, 255, 0.25);
+            border-radius: 24px;
             overflow: hidden;
-            background: #334155;
+            background: #1e293b;
             display: flex;
             align-items: center;
             justify-content: center;
             flex-shrink: 0;
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.3);
         }
 
         .section-title {
             position: relative;
             padding-bottom: 8px;
-            margin-bottom: 16px;
+            margin-bottom: 18px;
             font-weight: 800;
             letter-spacing: 0.05em;
         }
@@ -63,78 +72,119 @@
             position: absolute;
             bottom: 0;
             left: 0;
-            width: 40px;
+            width: 36px;
             height: 4px;
             background: #2563eb;
             border-radius: 2px;
         }
     </style>
 </head>
-<body class="py-10 px-4 md:px-0">
+<body class="py-8 px-3 md:px-0">
 
-    <div class="max-w-4xl mx-auto bg-white shadow-xl rounded-3xl overflow-hidden cv-container">
+    <div class="max-w-4xl mx-auto bg-white shadow-2xl rounded-3xl overflow-hidden cv-container border border-slate-100">
         <!-- Header Section -->
-        <div class="bg-slate-900 text-white p-8 md:p-12 flex flex-col md:flex-row items-center gap-8">
-            <div class="profile-img-container shadow-2xl">
-                <img src="ucup.jpg" alt="Yusuf Febrian Shiddiq" class="w-full h-full object-cover" onerror="this.src='https://via.placeholder.com/150'">
+        <div class="bg-gradient-to-r from-slate-900 via-slate-800 to-blue-950 text-white p-8 md:p-12 flex flex-col md:flex-row items-center gap-8 relative overflow-hidden">
+            
+            <!-- Hiasan latar belakang -->
+            <div class="absolute -right-10 -bottom-10 w-48 h-48 bg-blue-600/10 rounded-full blur-2xl pointer-events-none"></div>
+
+            <div class="profile-img-container z-10">
+                <img src="ucup.jpg" alt="Yusuf Febrian Shiddiq" class="w-full h-full object-cover" onerror="this.src='https://via.placeholder.com/150?text=Foto+Profil'">
             </div>
 
-            <div class="text-center md:text-left flex-1">
-                <h1 class="text-3xl md:text-4xl font-extrabold tracking-tight leading-none mb-2">YUSUF FEBRIAN SHIDDIQ</h1>
-                <p class="text-blue-400 font-semibold text-base md:text-lg mb-4">Pengemudi Profesional & Staf Operasional</p>
+            <div class="text-center md:text-left flex-1 z-10">
+                <div class="inline-block px-3 py-1 bg-blue-500/20 border border-blue-400/30 rounded-full text-blue-300 text-xs font-bold tracking-wider uppercase mb-3">
+                    Personal Driver & Staf Operasional
+                </div>
+                <h1 class="text-3xl md:text-4xl font-extrabold tracking-tight leading-none mb-3">YUSUF FEBRIAN SHIDDIQ</h1>
+                <p class="text-slate-300 text-sm md:text-base leading-relaxed mb-6 max-w-xl">
+                    Pengemudi handal, disiplin, dan bertanggung jawab tinggi. Berfokus pada keamanan berkendara, ketepatan waktu, serta kenyamanan penumpang.
+                </p>
                 
-                <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-sm text-slate-300">
-                    <div class="flex items-center justify-center md:justify-start gap-3">
-                        <div class="w-8 h-8 rounded-full bg-slate-800 flex items-center justify-center">
-                            <i class="fas fa-envelope text-blue-400 text-xs"></i>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs md:text-sm text-slate-300">
+                    <div class="flex items-center justify-center md:justify-start gap-2.5">
+                        <div class="w-7 h-7 rounded-lg bg-slate-800/80 border border-slate-700 flex items-center justify-center text-blue-400">
+                            <i class="fas fa-envelope text-xs"></i>
                         </div>
-                        yusuffebrianshiddiq22@gmail.com
+                        <span>yusuffebrianshiddiq22@gmail.com</span>
                     </div>
-                    <div class="flex items-center justify-center md:justify-start gap-3">
-                        <div class="w-8 h-8 rounded-full bg-slate-800 flex items-center justify-center">
-                            <i class="fas fa-phone text-blue-400 text-xs"></i>
+                    <div class="flex items-center justify-center md:justify-start gap-2.5">
+                        <div class="w-7 h-7 rounded-lg bg-slate-800/80 border border-slate-700 flex items-center justify-center text-blue-400">
+                            <i class="fas fa-phone text-xs"></i>
                         </div>
-                        085352002602
+                        <span>085352002602</span>
                     </div>
-                    <div class="flex items-center justify-center md:justify-start gap-3">
-                        <div class="w-8 h-8 rounded-full bg-slate-800 flex items-center justify-center">
-                            <i class="fas fa-location-dot text-blue-400 text-xs"></i>
+                    <div class="flex items-center justify-center md:justify-start gap-2.5">
+                        <div class="w-7 h-7 rounded-lg bg-slate-800/80 border border-slate-700 flex items-center justify-center text-blue-400">
+                            <i class="fas fa-location-dot text-xs"></i>
                         </div>
-                        Bandung, Jawa Barat
+                        <span>Bandung, Jawa Barat</span>
                     </div>
-                    <div class="flex items-center justify-center md:justify-start gap-3 text-blue-400 font-bold no-print cursor-pointer hover:underline" onclick="window.print()">
-                        <div class="w-8 h-8 rounded-full bg-blue-600/20 flex items-center justify-center">
+                    <div class="flex items-center justify-center md:justify-start gap-2.5 text-blue-400 font-bold no-print cursor-pointer hover:text-blue-300 transition-colors" onclick="window.print()">
+                        <div class="w-7 h-7 rounded-lg bg-blue-600/30 border border-blue-500/40 flex items-center justify-center">
                             <i class="fas fa-print text-xs"></i>
                         </div>
-                        Cetak CV / Simpan PDF
+                        <span>Cetak CV / Simpan PDF</span>
                     </div>
                 </div>
             </div>
         </div>
 
         <div class="grid grid-cols-1 md:grid-cols-12">
-            <!-- Left Column -->
-            <div class="md:col-span-4 bg-slate-50 p-8 border-r border-slate-100">
+            <!-- Left Column / Sidebar -->
+            <div class="md:col-span-4 bg-slate-50/80 p-6 md:p-8 border-r border-slate-100">
                 
+                <!-- Lisensi Mengemudi -->
+                <div class="mb-8">
+                    <h2 class="section-title text-slate-800 uppercase text-xs">Lisensi Mengemudi</h2>
+                    <div class="space-y-2.5">
+                        <div class="bg-white p-3.5 rounded-2xl border border-slate-200/80 shadow-sm flex justify-between items-center hover:border-blue-300 transition-all">
+                            <div class="flex items-center gap-3">
+                                <div class="w-9 h-9 rounded-xl bg-blue-50 text-blue-600 flex items-center justify-center font-bold text-xs">
+                                    <i class="fas fa-car"></i>
+                                </div>
+                                <div>
+                                    <p class="text-xs font-extrabold text-slate-800">SIM A</p>
+                                    <p class="text-[10px] text-slate-500 font-medium">Mobil / Roda 4</p>
+                                </div>
+                            </div>
+                            <span class="text-[10px] bg-emerald-100 text-emerald-800 border border-emerald-200 px-2.5 py-0.5 rounded-full font-bold">Aktif</span>
+                        </div>
+
+                        <div class="bg-white p-3.5 rounded-2xl border border-slate-200/80 shadow-sm flex justify-between items-center hover:border-blue-300 transition-all">
+                            <div class="flex items-center gap-3">
+                                <div class="w-9 h-9 rounded-xl bg-blue-50 text-blue-600 flex items-center justify-center font-bold text-xs">
+                                    <i class="fas fa-motorcycle"></i>
+                                </div>
+                                <div>
+                                    <p class="text-xs font-extrabold text-slate-800">SIM C</p>
+                                    <p class="text-[10px] text-slate-500 font-medium">Motor / Roda 2</p>
+                                </div>
+                            </div>
+                            <span class="text-[10px] bg-emerald-100 text-emerald-800 border border-emerald-200 px-2.5 py-0.5 rounded-full font-bold">Aktif</span>
+                        </div>
+                    </div>
+                </div>
+
                 <!-- Keahlian Utama -->
-                <div class="mb-10">
+                <div class="mb-8">
                     <h2 class="section-title text-slate-800 uppercase text-xs">Keahlian & Kemampuan</h2>
-                    <div class="flex flex-wrap gap-1">
-                        <span class="skill-tag">Navigasi & Rute Jalan</span>
-                        <span class="skill-tag">Pengemudian Aman</span>
-                        <span class="skill-tag">Perawatan Kendaraan</span>
-                        <span class="skill-tag">Ketepatan Waktu</span>
-                        <span class="skill-tag">Fisik & Stamina Prima</span>
-                        <span class="skill-tag">Etika & Kesopanan</span>
-                        <span class="skill-tag">Manajemen Waktu</span>
+                    <div class="flex flex-wrap gap-1.5">
+                        <span class="skill-tag"><i class="fas fa-map-location-dot text-blue-500 text-[10px]"></i> Navigasi Jalan</span>
+                        <span class="skill-tag"><i class="fas fa-shield-cat text-blue-500 text-[10px]"></i> Defensive Driving</span>
+                        <span class="skill-tag"><i class="fas fa-wrench text-blue-500 text-[10px]"></i> Perawatan Unit</span>
+                        <span class="skill-tag"><i class="fas fa-clock text-blue-500 text-[10px]"></i> Ketepatan Waktu</span>
+                        <span class="skill-tag"><i class="fas fa-heart-pulse text-blue-500 text-[10px]"></i> Fisik Prima</span>
+                        <span class="skill-tag"><i class="fas fa-user-shield text-blue-500 text-[10px]"></i> Etika & Privasi</span>
+                        <span class="skill-tag"><i class="fas fa-route text-blue-500 text-[10px]"></i> Manajemen Rute</span>
                     </div>
                 </div>
 
                 <!-- Pendidikan -->
-                <div class="mb-10">
+                <div class="mb-8">
                     <h2 class="section-title text-slate-800 uppercase text-xs">Riwayat Pendidikan</h2>
                     <div class="space-y-4">
-                        <div class="relative pl-4 border-l-2 border-blue-500">
+                        <div class="relative pl-4 border-l-2 border-blue-600">
                             <p class="font-bold text-slate-800 text-sm">Telkom University</p>
                             <p class="text-xs text-slate-600">Pendidikan Tinggi</p>
                         </div>
@@ -145,74 +195,91 @@
                     </div>
                 </div>
 
-                <!-- Lisensi -->
-                <div class="mb-10">
-                    <h2 class="section-title text-slate-800 uppercase text-xs">Lisensi Mengemudi</h2>
-                    <div class="bg-white p-3 rounded-xl border border-slate-200 shadow-sm">
-                        <p class="text-xs font-bold text-slate-800">SIM (Surat Izin Mengemudi)</p>
-                        <p class="text-[11px] text-blue-600 font-semibold mt-1">Dalam proses penyelesaian akhir</p>
-                    </div>
-                </div>
-
                 <!-- Bahasa -->
                 <div>
                     <h2 class="section-title text-slate-800 uppercase text-xs">Bahasa</h2>
                     <div class="flex flex-col gap-2">
-                        <div class="flex justify-between items-center bg-white p-2.5 rounded-lg border border-slate-200">
+                        <div class="flex justify-between items-center bg-white p-2.5 rounded-xl border border-slate-200/80">
                             <span class="text-xs font-bold text-slate-700">Bahasa Indonesia</span>
-                            <span class="text-[10px] bg-green-100 text-green-700 px-2 py-0.5 rounded-full font-bold">Aktif</span>
+                            <span class="text-[10px] bg-blue-50 text-blue-700 border border-blue-200 px-2 py-0.5 rounded-full font-bold">Lancar</span>
                         </div>
-                        <div class="flex justify-between items-center bg-white p-2.5 rounded-lg border border-slate-200">
+                        <div class="flex justify-between items-center bg-white p-2.5 rounded-xl border border-slate-200/80">
                             <span class="text-xs font-bold text-slate-700">Bahasa Sunda</span>
-                            <span class="text-[10px] bg-green-100 text-green-700 px-2 py-0.5 rounded-full font-bold">Aktif</span>
+                            <span class="text-[10px] bg-blue-50 text-blue-700 border border-blue-200 px-2 py-0.5 rounded-full font-bold">Lancar</span>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <!-- Right Column -->
-            <div class="md:col-span-8 p-8 md:p-12">
+            <!-- Right Column / Content -->
+            <div class="md:col-span-8 p-6 md:p-10">
+                
+                <!-- Highlight Badges / Quick Stats -->
+                <div class="grid grid-cols-3 gap-3 mb-8">
+                    <div class="p-3 bg-blue-50/60 rounded-2xl border border-blue-100 text-center">
+                        <i class="fas fa-id-card text-blue-600 text-lg mb-1"></i>
+                        <p class="text-[11px] font-bold text-slate-800">SIM A & C</p>
+                        <p class="text-[9px] text-slate-500">Status Aktif</p>
+                    </div>
+                    <div class="p-3 bg-emerald-50/60 rounded-2xl border border-emerald-100 text-center">
+                        <i class="fas fa-shield-halved text-emerald-600 text-lg mb-1"></i>
+                        <p class="text-[11px] font-bold text-slate-800">Safe Driving</p>
+                        <p class="text-[9px] text-slate-500">Utamakan Selamat</p>
+                    </div>
+                    <div class="p-3 bg-amber-50/60 rounded-2xl border border-amber-100 text-center">
+                        <i class="fas fa-dumbbell text-amber-600 text-lg mb-1"></i>
+                        <p class="text-[11px] font-bold text-slate-800">Stamina Tinggi</p>
+                        <p class="text-[9px] text-slate-500">Eks Atlet Renang</p>
+                    </div>
+                </div>
+
                 <!-- Profil Singkat -->
-                <section class="mb-10">
-                    <h2 class="flex items-center text-lg font-extrabold text-slate-800 mb-3">
-                        <span class="w-8 h-8 bg-blue-100 text-blue-600 rounded-lg flex items-center justify-center mr-3 text-xs">
+                <section class="mb-8">
+                    <h2 class="flex items-center text-base font-extrabold text-slate-800 mb-3">
+                        <span class="w-7 h-7 bg-blue-100 text-blue-600 rounded-lg flex items-center justify-center mr-2.5 text-xs">
                             <i class="fas fa-user-check"></i>
                         </span>
                         Ringkasan Profil
                     </h2>
-                    <p class="text-slate-600 leading-relaxed text-sm">
-                        Pribadi yang disiplin, jujur, dan memiliki tanggung jawab tinggi terhadap keamanan serta kenyamanan perjalanan. Berlatar belakang sebagai atlet renang yang terbiasa dengan ketahanan fisik, fokus penuh, dan ketepatan waktu. Bagi saya, mengemudi bukan sekadar menjalankan kendaraan, melainkan menjaga keselamatan penumpang serta memastikan seluruh operasional perjalanan berjalan dengan tenang, tepat waktu, dan tanpa kendala. Siap bertugas untuk kebutuhan kantor pribadi, instansi, maupun lembaga pendidikan.
+                    <p class="text-slate-600 leading-relaxed text-xs md:text-sm">
+                        Pribadi yang disiplin, jujur, dan memiliki tanggung jawab tinggi terhadap keamanan serta kenyamanan perjalanan. Berlatar belakang sebagai atlet renang yang terbiasa dengan ketahanan fisik prima, fokus penuh, dan ketepatan waktu. Bagi saya, mengemudi bukan sekadar menjalankan kendaraan, melainkan menjaga keselamatan penumpang serta memastikan seluruh operasional perjalanan berjalan dengan tenang, tepat waktu, dan tanpa kendala. Siap bertugas untuk kebutuhan perorangan, pimpinan perusahaan, instansi, maupun lembaga pendidikan.
                     </p>
                 </section>
 
-                <!-- Nilai Utama & Kesiapan Kerja -->
-                <section class="mb-10">
-                    <h2 class="flex items-center text-lg font-extrabold text-slate-800 mb-4">
-                        <span class="w-8 h-8 bg-blue-100 text-blue-600 rounded-lg flex items-center justify-center mr-3 text-xs">
-                            <i class="fas fa-shield-halved"></i>
+                <!-- Nilai Utama & Komitmen Kerja -->
+                <section class="mb-8">
+                    <h2 class="flex items-center text-base font-extrabold text-slate-800 mb-4">
+                        <span class="w-7 h-7 bg-blue-100 text-blue-600 rounded-lg flex items-center justify-center mr-2.5 text-xs">
+                            <i class="fas fa-star"></i>
                         </span>
                         Komitmen & Prinsip Kerja
                     </h2>
                     
-                    <div class="space-y-4">
-                        <div class="p-4 rounded-xl bg-slate-50 border border-slate-200">
-                            <h3 class="font-bold text-slate-900 text-sm mb-1"><i class="fas fa-clock text-blue-600 mr-2"></i>Kedisiplinan & Ketepatan Waktu</h3>
+                    <div class="space-y-3.5">
+                        <div class="p-4 rounded-2xl bg-slate-50/80 border border-slate-200/80 hover:border-blue-200 transition-colors">
+                            <h3 class="font-bold text-slate-900 text-xs md:text-sm mb-1 flex items-center">
+                                <i class="fas fa-clock text-blue-600 mr-2 text-xs"></i>Kedisiplinan & Ketepatan Waktu
+                            </h3>
                             <p class="text-xs text-slate-600 leading-relaxed">
-                                Menghargai waktu dengan senantiasa hadir tepat waktu, merencanakan rute perjalanan terbaik, dan siap siaga mendukung jadwal kegiatan pimpinan, staf, maupun penumpang.
+                                Menghargai waktu dengan senantiasa hadir tepat waktu, merencanakan rute perjalanan terbaik, dan siap siaga mendukung jadwal kegiatan pimpinan maupun operasional kantor.
                             </p>
                         </div>
 
-                        <div class="p-4 rounded-xl bg-slate-50 border border-slate-200">
-                            <h3 class="font-bold text-slate-900 text-sm mb-1"><i class="fas fa-car-burst text-blue-600 mr-2"></i>Tanggung Jawab & Perawatan Kendaraan</h3>
+                        <div class="p-4 rounded-2xl bg-slate-50/80 border border-slate-200/80 hover:border-blue-200 transition-colors">
+                            <h3 class="font-bold text-slate-900 text-xs md:text-sm mb-1 flex items-center">
+                                <i class="fas fa-car-side text-blue-600 mr-2 text-xs"></i>Tanggung Jawab & Perawatan Kendaraan
+                            </h3>
                             <p class="text-xs text-slate-600 leading-relaxed">
-                                Memastikan unit kendaraan yang dipercayakan senantiasa dalam kondisi bersih, aman, wangi, serta siap pakai melalui pengecekan rutin (oli, rem, tekanan ban, dan kelayakan mesin).
+                                Memastikan unit kendaraan senantiasa dalam kondisi bersih, harum, dan aman digunakan melalui pemeliharaan rutin (pengecekan oli, rem, tekanan ban, serta kelayakan mesin).
                             </p>
                         </div>
 
-                        <div class="p-4 rounded-xl bg-slate-50 border border-slate-200">
-                            <h3 class="font-bold text-slate-900 text-sm mb-1"><i class="fas fa-heart text-blue-600 mr-2"></i>Etika & Pengendalian Diri</h3>
+                        <div class="p-4 rounded-2xl bg-slate-50/80 border border-slate-200/80 hover:border-blue-200 transition-colors">
+                            <h3 class="font-bold text-slate-900 text-xs md:text-sm mb-1 flex items-center">
+                                <i class="fas fa-user-lock text-blue-600 mr-2 text-xs"></i>Etika & Kerahasiaan
+                            </h3>
                             <p class="text-xs text-slate-600 leading-relaxed">
-                                Menjaga kerahasiaan dan privasi penumpang, bersikap sopan, ramah, serta tenang saat mengemudi di berbagai kondisi lalu lintas.
+                                Menjaga privasi penumpang secara profesional, bersikap sopan, ramah, serta tetap tenang dan sigap saat berkendara di berbagai kondisi lalu lintas.
                             </p>
                         </div>
                     </div>
@@ -220,20 +287,20 @@
 
                 <!-- Keunggulan Fisik & Prestasi -->
                 <section>
-                    <h2 class="flex items-center text-lg font-extrabold text-slate-800 mb-3">
-                        <span class="w-8 h-8 bg-yellow-100 text-yellow-600 rounded-lg flex items-center justify-center mr-3 text-xs">
+                    <h2 class="flex items-center text-base font-extrabold text-slate-800 mb-3">
+                        <span class="w-7 h-7 bg-amber-100 text-amber-600 rounded-lg flex items-center justify-center mr-2.5 text-xs">
                             <i class="fas fa-trophy"></i>
                         </span>
-                        Latar Belakang Kedisiplinan
+                        Latar Belakang Kedisiplinan & Kedasaran Fisik
                     </h2>
-                    <div class="bg-gradient-to-r from-slate-50 to-blue-50 p-5 rounded-2xl border border-slate-200 flex items-start gap-4">
-                        <div class="text-3xl text-yellow-500 flex-shrink-0 mt-1">
+                    <div class="bg-gradient-to-r from-amber-50/50 via-slate-50 to-blue-50/50 p-4 md:p-5 rounded-2xl border border-amber-200/60 flex items-start gap-4">
+                        <div class="w-10 h-10 rounded-xl bg-amber-100 text-amber-600 flex items-center justify-center flex-shrink-0 text-xl shadow-sm">
                             <i class="fas fa-medal"></i>
                         </div>
                         <div>
-                            <p class="text-sm font-bold text-slate-900">Juara 1 Lomba Renang - Kabupaten Bandung</p>
+                            <p class="text-xs md:text-sm font-bold text-slate-900">Juara 1 Lomba Renang - Kabupaten Bandung</p>
                             <p class="text-xs text-slate-600 mt-1 leading-relaxed">
-                                Latihan keras dan kompetisi membentuk stamina fisik yang tangguh, tidak mudah lelah, konsentrasi tinggi, serta tingkat kewaspadaan yang kuat saat menjalankan tugas dalam durasi panjang.
+                                Kedisiplinan latihan atletik membina stamina fisik yang tangguh, ketahanan tubuh agar tidak mudah lelah, konsentrasi tinggi, serta tingkat kewaspadaan yang kuat saat berkendara jarak jauh maupun durasi panjang.
                             </p>
                         </div>
                     </div>
@@ -242,8 +309,8 @@
         </div>
         
         <!-- Footer -->
-        <div class="bg-slate-900 text-white p-5 text-center text-[10px] uppercase tracking-widest font-semibold">
-            <span>Yusuf Febrian Shiddiq &bull; CV Pengemudi Profesional</span>
+        <div class="bg-slate-900 text-white p-4 text-center text-[10px] uppercase tracking-widest font-semibold border-t border-slate-800">
+            <span>Yusuf Febrian Shiddiq &bull; CV Pengemudi & Staf Operasional Profesional</span>
         </div>
     </div>
 
